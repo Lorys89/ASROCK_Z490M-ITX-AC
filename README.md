@@ -20,7 +20,7 @@ EFI for ASROCK Z490M ITX/AC with OpenCore bootloader
 | Lan 2.5 GBPS     | Realtek 8125                       |
 | Lan 1.0 GBPS     | Intel I219 V11                     |
 | Audio            | Realtek ALC1200                    |
-| Ram              | CORSAIR DDR4 3600 MHz 32GB         |
+| Ram              | CORSAIR 32GB DDR4 3600 MHz         |
 | Wifi + Bluetooth | BCM94352Z (DW1560)                 |
 | 1° NVMe          | SAMSUNG 970 EVO PLUS 500 GB (MACOS)|
 | 2° NVMe          | SAMSUNG 970 EVO PLUS 500 GB (WIN)  |
