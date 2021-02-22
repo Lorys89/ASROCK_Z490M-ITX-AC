@@ -80,16 +80,11 @@ See [ioreg](./ioregMacmini.ioreg) for more clarification
 ## Bios settings
 ### Enable :
 * SATA Operation : AHCI
-* Fastboot : Thorough
-* Integrated NIC : Enable
-
 
 ### Disable : 
 * Secure Boot
-* Absolute
-* TPM2.0 Security On
 * Intel SGX
-* Enable UEFI Network Stack
+* Fastboot
 
 ## Credits
 
