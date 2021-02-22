@@ -1,11 +1,11 @@
 [![](https://img.shields.io/badge/Gitter%20HL%20Community-Chat-informational?style=flat&logo=gitter&logoColor=white&color=ed1965)](https://gitter.im/Hackintosh-Life-IT/community)
-[![](https://img.shields.io/badge/EFI-Release-informational?style=flat&logo=apple&logoColor=white&color=9debeb)](https://github.com/Lorys89/DELL_OPTIPLEX_3060_MFF/releases)
+[![](https://img.shields.io/badge/EFI-Release-informational?style=flat&logo=apple&logoColor=white&color=9debeb)](https://github.com/Lorys89/ASROCK_Z490M-ITX-AC/releases)
 [![](https://img.shields.io/badge/Telegram-HackintoshLifeIT-informational?style=flat&logo=telegram&logoColor=white&color=5fb659)](https://t.me/HackintoshLife_it)
 [![](https://img.shields.io/badge/Facebook-HackintoshLifeIT-informational?style=flat&logo=facebook&logoColor=white&color=3a4dc9)](https://www.facebook.com/hackintoshlife/)
 [![](https://img.shields.io/badge/Instagram-HackintoshLifeIT-informational?style=flat&logo=instagram&logoColor=white&color=8a178a)](https://www.instagram.com/hackintoshlife.it_official/)
-# Dell Optiplex 3060 MFF Hackintosh
+# ASROCK Z490M ITX/AC Hackintosh
 
-EFI for Dell Optiplex 3060 MFF with OpenCore bootloader
+EFI for ASROCK Z490M ITX/AC with OpenCore bootloader
 
 ![descrizione](./Screenshot/pc.jpg)
 
@@ -13,15 +13,18 @@ EFI for Dell Optiplex 3060 MFF with OpenCore bootloader
 
 | Component        | Brank                              |
 | ---------------- | ---------------------------------- |
-| CPU              | Intel i3 8100T (4C-4T 6MB CFL)     |
-| iGPU             | Intel® UHD Graphics 630            |
-| Lan              | Realtek 8168                       |
-| Audio            | Realtek ALC255                     |
-| Ram              | 32 GB DDR4 2400 Mhz                |
-| Wifi + Bluetooth | BCM943602BAED (DW1830)             |
-| NVMe             | SAMSUNG 970 EVO PLUS 500 GB (MACOS)|
-| SSD              | SAMSUNG 850 EVO 500 GB (WINDOWS)   |
-| SmBios           | MacMini 8,1                        |
+| CPU              | Intel i5 10600K(6C-12T 12MB CML)   |
+| iGPU             | Intel® UHD Graphics                |
+| GPU              | SHAPPIRE NITRO+ RX570 4GB GDDR5    |
+| Lan 2.5 GBPS     | Realtek 8125                       |
+| Lan 1 GBPS       | Intel I219 V11                     |
+| Audio            | Realtek ALC1200                    |
+| Ram              | CORSAIR DDR4 3600 MHz 32GB         |
+| Wifi + Bluetooth | BCM94352Z (DW1560)                 |
+| 1° NVMe          | SAMSUNG 970 EVO PLUS 500 GB (MACOS)|
+| 2° NVMe          | SAMSUNG 970 EVO PLUS 500 GB (WIN)  |
+| SSD              | SAMSUNG 860 EVO 500 GB (DATI)      |
+| SmBios           | iMac 20,1                          |
 | BootLoader       | OpenCore 0.6.6                     |
 | macOS            | Big Sur 11.3 (Beta)                |
 
@@ -97,25 +100,6 @@ See [ioreg](./ioregMacmini.ioreg) for more clarification
 * Enable UEFI Network Stack
 * cfg lock and DVMT and unlock NVME gen3: DO AT YOUR OWN RISK!!! It may brick your laptop.
 
-- [Bios Extract to txt](https://github.com/Lorys89/DELL_OPTIPLEX_3060_MFF/raw/main/TOOLS%20EFI%20MOD/bios%203%203060mff%20085C.txt)
- 
-Create a usb in FAT with MBR map and put [ru.efi](https://github.com/Lorys89/DELL_OPTIPLEX_3060_MFF/raw/main/TOOLS%20EFI%20MOD/RU.efi) in it 
-then go to the bios, and create an entry with the path of the usb and setting the ru.efi file and the name of 
-your choice startup and then send and finally click apply.
-
-Restart and press f12 among the entries you will have the last created, click any key, then click alt + ì a menu will appear and
-scroll to CpuSetup and click enter, in the new screen go with the arrows on the value 05BE and change it from 01 to 00 and click 
-enter and then ctrl + w to save and then alt + q to exit. proceed to check if your CFG LOCK is unlocked.
-
-![CpuSetup](./TOOLS%20EFI%20MOD/CFG.bmp)
-
-For the DVMT pre all values you have to go to the Setup menu and enter and look for 08DC and set it from 01 to 02 (value 02 is for 64MB pre all)and then move then save with ctrl + w and to exit alt + q and you will have the suitable DVMT values to the igpu. 
-
-![Setup](./TOOLS%20EFI%20MOD/DVMT.bmp)
-
-For unlock the NVME from GEN2 to GEN3 you have to go to the Setup menu and enter and look the photo and set the value from 02 to 03 and then move then save with ctrl + w and to exit alt + q and you will have the NVME Work to GEN3. 
-
-![Setup](./TOOLS%20EFI%20MOD/NVME.bmp)
 
 ## Credits
 
