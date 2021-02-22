@@ -80,11 +80,19 @@ See [ioreg](./ioregMacmini.ioreg) for more clarification
 ## Bios settings
 ### Enable :
 * SATA Operation : AHCI
+* XHCI Hand-Off
+* XMP 2.0 Profile 1 or AUTO
+* Primary Graphics Adapter : AUTO
+* Share Memory : 128Mb
+* IGPU Multi-Monitor
 
 ### Disable : 
 * Secure Boot
 * Intel SGX
 * Fastboot
+* CFG LOCK
+* Boot From Onboard LAN
+* CSM
 
 ## Credits
 
