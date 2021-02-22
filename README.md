@@ -7,7 +7,7 @@
 
 EFI for ASROCK Z490M ITX/AC with OpenCore bootloader
 
-![descrizione](./Screenshot/mobo.jpg)
+![descrizione](./Screenshot/mobo.png)
 ![descrizione](./Screenshot/pc.jpg)
 
 ### Computer Spec:
