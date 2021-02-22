@@ -56,7 +56,7 @@ EFI for ASROCK Z490M ITX/AC with OpenCore bootloader
 - [x] ALC1200 Combojack microphone
 - [x] ALC1200 HDMI/DP Audio Output
 - [x] ALC1200 jack LINE-IN
-- [x] All USB Ports 
+- [x] All USB Ports (port mapping performed)
 - [x] SpeedStep / Sleep / Wake
 - [x] HID Key PWRB & SLPB 
 - [x] Wi-Fi and Bluetooth BCM94352Z (DW1560) Module
@@ -69,12 +69,6 @@ EFI for ASROCK Z490M ITX/AC with OpenCore bootloader
 - [x] NVRAM
 - [x] Windows 10 boot from OpenCore
 
-
-
-### Special Config:
-
-- Usb port mapping performed
-- Applied cosmetics pci-dev
 
 See [ioreg](./ioregMacmini.ioreg) for more clarification
 
