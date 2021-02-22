@@ -65,7 +65,6 @@ EFI for ASROCK Z490M ITX/AC with OpenCore bootloader
 - [x] All Sensors (CPU, IGPU, GPU, NVME, SATA, MOBO, FAN)
 - [x] Realtek RTL8125 LAN
 - [x] Intel I219 V11 LAN
-- [x] Apple VTD
 - [x] NVRAM
 - [x] Windows 10 boot from OpenCore
 
