@@ -47,21 +47,24 @@ EFI for ASROCK Z490M ITX/AC with OpenCore bootloader
 
 ### What works and What doesn't or WIP:
 
-- [x] Intel UHD 630 iGPU HDMI/DP Output
-- [x] Intel UHD 630 iGPU - H264 & HEVC
-- [x] ALC255 Internal Speakers
-- [x] ALC255 Native Combojack headphones
-- [x] ALC255 Combojack microphone
-- [x] ALC255 HDMI/DP Audio Output
-- [x] ALC255 jack LINE-IN
+- [x] Intel UHD iGPU HDMI/DP Output
+- [x] Intel UHD iGPU - H264 & HEVC
+- [x] SHAPPIRE NITRO+ RX570 HDMI/DP Output
+- [x] SHAPPIRE NITRO+ RX570 - H264 & HEVC
+- [x] ALC1200 Native Combojack headphones
+- [x] ALC1200 Combojack microphone
+- [x] ALC1200 HDMI/DP Audio Output
+- [x] ALC1200 jack LINE-IN
 - [x] All USB Ports 
 - [x] SpeedStep / Sleep / Wake
 - [x] HID Key PWRB & SLPB 
-- [x] Wi-Fi and Bluetooth BCM943602BAED (DW1830) Module
-- [x] CONTROLLER NVME PciE Gen3x4
+- [x] Wi-Fi and Bluetooth BCM94352Z (DW1560) Module
+- [x] 1° CONTROLLER NVME PciE Gen3x4
+- [x] 2° CONTROLLER NVME PciE Gen3x4
 - [x] CONTROLLER SATA III
-- [x] All Sensors (CPU, BATTERY, NVME, SATA, FAN)
-- [x] Realtek RTL8168 LAN
+- [x] All Sensors (CPU, IGPU, GPU, NVME, SATA, MOBO, FAN)
+- [x] Realtek RTL8125 LAN
+- [x] Intel I219 V11 LAN
 - [x] Apple VTD
 - [x] NVRAM
 - [x] Windows 10 boot from OpenCore
@@ -72,11 +75,6 @@ EFI for ASROCK Z490M ITX/AC with OpenCore bootloader
 
 - Usb port mapping performed
 - Applied cosmetics pci-dev
-
-### Post Install:
-
-Open terminal and run install.sh from PostInsall/ComboJackAlc255. After reboot insert jack and appears this image
-![jack](./Screenshot/Combojackfix.png)
 
 See [ioreg](./ioregMacmini.ioreg) for more clarification
 
@@ -98,8 +96,6 @@ See [ioreg](./ioregMacmini.ioreg) for more clarification
 * TPM2.0 Security On
 * Intel SGX
 * Enable UEFI Network Stack
-* cfg lock and DVMT and unlock NVME gen3: DO AT YOUR OWN RISK!!! It may brick your laptop.
-
 
 ## Credits
 
