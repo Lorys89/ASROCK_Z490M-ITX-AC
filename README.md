@@ -17,7 +17,7 @@ EFI for ASROCK Z490M ITX/AC with OpenCore bootloader
 | iGPU             | Intel® UHD Graphics                |
 | GPU              | SHAPPIRE NITRO+ RX570 4GB GDDR5    |
 | Lan 2.5 GBPS     | Realtek 8125                       |
-| Lan 1 GBPS       | Intel I219 V11                     |
+| Lan 1.0 GBPS     | Intel I219 V11                     |
 | Audio            | Realtek ALC1200                    |
 | Ram              | CORSAIR DDR4 3600 MHz 32GB         |
 | Wifi + Bluetooth | BCM94352Z (DW1560)                 |
