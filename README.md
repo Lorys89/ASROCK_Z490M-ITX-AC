@@ -36,16 +36,14 @@ EFI for ASROCK Z490M ITX/AC with OpenCore bootloader
 
 ## Peripherals & Bench
 
-![infohack](./Screenshot/hackintooldevice.png)
-![infodp2](./Screenshot/DpciScreen2.png)
-![infopci](./Screenshot/PCISEZ.png)
-![Fan&Temp](./Screenshot/SENSOR.png)
-![Speedtest](./Screenshot/speedtest.png)
 ![bench](./Screenshot/RAM-NVME.png)
-![CPU](./Screenshot/cpu.png)
-![OPENCL](./Screenshot/opencl.png)
-![METAL](./Screenshot/metal.png)
-![videoproc](./Screenshot/videoproc.png)
+![CPU](./Screenshot/CPU-SCORE.png)
+![GPU-OPENCL](./Screenshot/GPU-OPENC.png)
+![GPU-METAL](./Screenshot/GPU-METAL.png)
+![IGPU-OPENCL](./Screenshot/IGPU-OPENC.png)
+![IGPU-METAL](./Screenshot/IGPU-METAL.png)
+![videoproc](./Screenshot/VIDEOPROC.png)
+![Fan&Temp](./Screenshot/SENSOR.png)
 
 
 ### What works and What doesn't or WIP:
