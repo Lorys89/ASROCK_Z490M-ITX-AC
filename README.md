@@ -30,7 +30,9 @@ EFI for ASROCK Z490M ITX/AC with OpenCore bootloader
 | macOS            | Big Sur 11.2.2                     |
 
 
-![infomac](./Screenshot/infomac.png)
+![infomac](./Screenshot/GPU-INFOMAC.png)
+![infomac2](./Screenshot/IGPU-INFOMAC.png)
+
 
 ## Peripherals & Bench
 
