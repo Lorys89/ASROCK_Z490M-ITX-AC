@@ -27,7 +27,7 @@ EFI for ASROCK Z490M ITX/AC with OpenCore bootloader
 | SSD              | SAMSUNG 860 EVO 500 GB (DATI)      |
 | SmBios           | iMac 20,1                          |
 | BootLoader       | OpenCore 0.6.6                     |
-| macOS            | Big Sur 11.3 (Beta)                |
+| macOS            | Big Sur 11.2.2                     |
 
 
 ![infomac](./Screenshot/infomac.png)
