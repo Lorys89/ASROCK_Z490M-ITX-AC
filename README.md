@@ -38,11 +38,11 @@ EFI for ASROCK Z490M ITX/AC with OpenCore bootloader
 
 ![bench](./Screenshot/RAM-NVME.png)
 ![CPU](./Screenshot/CPU-SCORE.png)
-![GPU-OPENCL](./Screenshot/GPU-OPENCL.png)
-![GPU-METAL](./Screenshot/GPU-METAL.png)
-![IGPU-OPENCL](./Screenshot/IGPU-OPENCL.png)
-![IGPU-METAL](./Screenshot/IGPU-METAL.png)
-![videoproc](./Screenshot/VIDEOPROC.png)
+![GPU-OPENCL](./Screenshot/GPU-OPENCL.jpg)
+![GPU-METAL](./Screenshot/GPU-METAL.jpg)
+![IGPU-OPENCL](./Screenshot/IGPU-OPENCL.jpg)
+![IGPU-METAL](./Screenshot/IGPU-METAL.jpg)
+![videoproc](./Screenshot/VIDEOPROC.jpg)
 ![Fan&Temp](./Screenshot/SENSOR.png)
 
 
