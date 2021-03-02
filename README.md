@@ -50,12 +50,13 @@ EFI for ASROCK Z490M ITX/AC with OpenCore bootloader
 
 - [x] Intel UHD iGPU HDMI/DP Output
 - [x] Intel UHD iGPU - H264 & HEVC
-- [x] SHAPPIRE NITRO+ RX570 HDMI/DP Output
+- [x] SHAPPIRE NITRO+ RX570 HDMI/DP OUTPUT (with audio) 
 - [x] SHAPPIRE NITRO+ RX570 - H264 & HEVC
-- [x] ALC1200 Native Combojack headphones
-- [x] ALC1200 Combojack microphone
-- [x] ALC1200 HDMI/DP Audio Output
-- [x] ALC1200 jack LINE-IN
+- [x] ALC1200 jack headphone (Front) 
+- [x] ALC1200 jack line-out (Rear) 
+- [x] ALC1200 jack microphone (Front & Rear)
+- [x] ALC1200 jack linee-in (Rear) 
+- [x] ALC1200 HDMI/DP Audio Output (IGPU)
 - [x] All USB Ports (port mapping performed)
 - [x] SpeedStep / Sleep / Wake
 - [x] HID Key PWRB & SLPB 
@@ -67,6 +68,7 @@ EFI for ASROCK Z490M ITX/AC with OpenCore bootloader
 - [x] Realtek RTL8125 LAN
 - [x] Intel I219 V11 LAN
 - [x] NVRAM
+- [x] Apple VTD
 - [x] Windows 10 boot from OpenCore
 
 
