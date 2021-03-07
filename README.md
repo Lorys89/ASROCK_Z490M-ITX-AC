@@ -22,9 +22,10 @@ EFI for ASROCK Z490M ITX/AC with OpenCore bootloader
 | Audio            | Realtek ALC1200                    |
 | Ram              | CORSAIR 32GB DDR4 3600 MHz         |
 | Wifi + Bluetooth | BCM94352Z (DW1560)                 |
-| 1° NVMe          | SAMSUNG 970 EVO PLUS 500 GB (MACOS)|
-| 2° NVMe          | SAMSUNG 970 EVO PLUS 500 GB (WIN)  |
-| SSD              | SAMSUNG 860 EVO 500 GB (DATI)      |
+| 1° NVMe SSD      | SAMSUNG 970 EVO PLUS 500 GB (MACOS)|
+| 2° NVMe SSD      | SAMSUNG 970 EVO PLUS 500 GB (WIN)  |
+| 1° SATA SSD      | SAMSUNG 860 EVO 500 GB (BACKUP)    |
+| 2° SATA SSD      | SILICON POWER A55 256 GB (DATI)    |
 | SmBios           | iMac 20,1                          |
 | BootLoader       | OpenCore 0.6.6                     |
 | macOS            | Big Sur 11.2.2                     |
