@@ -21,7 +21,7 @@ EFI for ASROCK Z490M ITX/AC with OpenCore bootloader
 | Lan 1.0 GBPS     | Intel I219 V11                     |
 | Audio            | Realtek ALC1200                    |
 | Ram              | CORSAIR 32GB DDR4 3600 MHz         |
-| Wifi + Bluetooth | BCM94352Z (DW1560)                 |
+| Wifi + Bluetooth | FENVI BCM94360NG                   |
 | 1° NVMe SSD      | SAMSUNG 970 EVO PLUS 500 GB (MACOS)|
 | 2° NVMe SSD      | SAMSUNG 970 EVO PLUS 500 GB (WIN)  |
 | 1° SATA SSD      | SAMSUNG 860 EVO 500 GB (BACKUP)    |
@@ -37,6 +37,8 @@ EFI for ASROCK Z490M ITX/AC with OpenCore bootloader
 
 ## Peripherals & Bench
 
+![DEVICE](./Screenshot/PERIPH.png)
+![PCI-LIST](./Screenshot/PCI-LIST.png)
 ![bench-nvme-ram](./Screenshot/nvme-ram.png)
 ![CPU](./Screenshot/CPU-SCORE.png)
 ![GPU-OPENCL](./Screenshot/GPU-OPENCL.png)
@@ -62,7 +64,7 @@ EFI for ASROCK Z490M ITX/AC with OpenCore bootloader
 - [x] All USB Ports (port mapping performed)
 - [x] SpeedStep / Sleep / Wake
 - [x] HID Key PWRB & SLPB 
-- [x] Wi-Fi and Bluetooth BCM94352Z (DW1560) Module
+- [x] Wi-Fi and Bluetooth BCM94360NG Module
 - [x] 1° CONTROLLER NVME PciE Gen3x4
 - [x] 2° CONTROLLER NVME PciE Gen3x4
 - [x] CONTROLLER SATA III
@@ -74,7 +76,7 @@ EFI for ASROCK Z490M ITX/AC with OpenCore bootloader
 - [x] Windows 10 boot from OpenCore
 
 
-See [ioreg](./ioregMacmini.ioreg) for more clarification
+See [ioreg](./iMac_20,1.ioreg) for more clarification
 
 ### MacOS bootable USB creation:
 - Read the Dortania guide for creating your USB from Windows or macOS
