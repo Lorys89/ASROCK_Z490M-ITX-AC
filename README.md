@@ -21,7 +21,7 @@ EFI for ASROCK Z490M ITX/AC with OpenCore bootloader
 | Lan 1.0 GBPS     | Intel I219 V11                     |
 | Audio            | Realtek ALC1200                    |
 | Ram              | CORSAIR 32GB DDR4 3600 MHz         |
-| Wifi + Bluetooth | FENVI BCM94360NG                   |
+| Wifi + Bluetooth | DW1820A (BCM94350ZAE)              |
 | 1° NVMe SSD      | SAMSUNG 970 EVO PLUS 500 GB (MACOS)|
 | 2° NVMe SSD      | SAMSUNG 970 EVO PLUS 500 GB (WIN)  |
 | 1° SATA SSD      | SAMSUNG 860 EVO 500 GB (BACKUP)    |
@@ -37,8 +37,8 @@ EFI for ASROCK Z490M ITX/AC with OpenCore bootloader
 
 ## Peripherals & Bench
 
-![DEVICE](./Screenshot/PERIPH.png)
-![PCI-LIST](./Screenshot/PCI-LIST.png)
+![DEVICE](./Screenshot/PERIPH.png1)
+![PCI-LIST](./Screenshot/PCI-LIST.png1)
 ![bench-nvme-ram](./Screenshot/nvme-ram.png)
 ![CPU](./Screenshot/CPU-SCORE.png)
 ![GPU-OPENCL](./Screenshot/GPU-OPENCL.png)
@@ -64,7 +64,7 @@ EFI for ASROCK Z490M ITX/AC with OpenCore bootloader
 - [x] All USB Ports (port mapping performed)
 - [x] SpeedStep / Sleep / Wake
 - [x] HID Key PWRB & SLPB 
-- [x] Wi-Fi and Bluetooth BCM94360NG Module
+- [x] Wi-Fi and Bluetooth DW1820A (BCM94350ZAE) Module
 - [x] 1° CONTROLLER NVME PciE Gen3x4
 - [x] 2° CONTROLLER NVME PciE Gen3x4
 - [x] CONTROLLER SATA III
