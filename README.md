@@ -37,8 +37,8 @@ EFI for ASROCK Z490M ITX/AC with OpenCore bootloader
 
 ## Peripherals & Bench
 
-![DEVICE](./Screenshot/PERIPH.png1)
-![PCI-LIST](./Screenshot/PCI-LIST.png1)
+![DEVICE](./Screenshot/PERIPH.png)
+![PCI-LIST](./Screenshot/PCI-LIST.png)
 ![bench-nvme-ram](./Screenshot/nvme-ram.png)
 ![CPU](./Screenshot/CPU-SCORE.png)
 ![GPU-OPENCL](./Screenshot/GPU-OPENCL.png)
