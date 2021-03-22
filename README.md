@@ -16,7 +16,7 @@ EFI for ASROCK Z490M ITX/AC with OpenCore bootloader
 | ---------------- | ---------------------------------- |
 | CPU              | Intel i5 10600K (6C-12T 12MB CML)  |
 | iGPU             | Intel® UHD Graphics                |
-| GPU              | SHAPPIRE NITRO+ RX570 4GB GDDR5    |
+| GPU              | SAPPHIRE NITRO+ RX570 4GB GDDR5    |
 | Lan 2.5 GBPS     | Realtek 8125                       |
 | Lan 1.0 GBPS     | Intel I219 V11                     |
 | Audio            | Realtek ALC1200                    |
