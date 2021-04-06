@@ -5,13 +5,13 @@
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of iASL7SSWMh.aml, Sat Mar 20 18:16:02 2021
+ * Disassembly of iASLVhz3qm.aml, Tue Apr  6 18:15:27 2021
  *
  * Original Table Header:
  *     Signature        "SSDT"
- *     Length           0x000002DC (732)
+ *     Length           0x0000027A (634)
  *     Revision         0x02
- *     Checksum         0x29
+ *     Checksum         0x7F
  *     OEM ID           "HACK"
  *     OEM Table ID     "ASROCK"
  *     OEM Revision     0x00000000 (0)
@@ -22,10 +22,9 @@ DefinitionBlock ("", "SSDT", 2, "HACK", "ASROCK", 0x00000000)
 {
     External (_SB_.PCI0, DeviceObj)
     External (_SB_.PCI0.LPCB, DeviceObj)
-    External (_SB_.PCI0.SBUS, DeviceObj)
+    External (_SB_.PCI0.XHC_._PRW, MethodObj)    // 0 Arguments
     External (_SB_.PR00, ProcessorObj)
     External (STAS, IntObj)
-    External (XPRW, MethodObj)    // 2 Arguments
 
     Scope (\_SB)
     {
@@ -34,6 +33,19 @@ DefinitionBlock ("", "SSDT", 2, "HACK", "ASROCK", 0x00000000)
             If (_OSI ("Darwin"))
             {
                 STAS = One
+            }
+        }
+
+        If ((CondRefOf (\_OSI, Local0) && _OSI ("Darwin")))
+        {
+            Device (USBW)
+            {
+                Name (_HID, "PNP0D10" /* XHCI USB Controller with debug */)  // _HID: Hardware ID
+                Name (_UID, "WAKE")  // _UID: Unique ID
+                Method (_PRW, 0, NotSerialized)  // _PRW: Power Resources for Wake
+                {
+                    Return (\_SB.PCI0.XHC._PRW ())
+                }
             }
         }
 
@@ -117,48 +129,6 @@ DefinitionBlock ("", "SSDT", 2, "HACK", "ASROCK", 0x00000000)
                 }
             }
 
-            Scope (SBUS)
-            {
-                Device (BUS0)
-                {
-                    Name (_CID, "smbus")  // _CID: Compatible ID
-                    Name (_ADR, Zero)  // _ADR: Address
-                    Device (DVL0)
-                    {
-                        Name (_ADR, 0x57)  // _ADR: Address
-                        Name (_CID, "diagsvault")  // _CID: Compatible ID
-                        Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
-                        {
-                            If (!Arg2)
-                            {
-                                Return (Buffer (One)
-                                {
-                                     0x57                                             // W
-                                })
-                            }
-
-                            Return (Package (0x02)
-                            {
-                                "address", 
-                                0x57
-                            })
-                        }
-                    }
-
-                    Method (_STA, 0, NotSerialized)  // _STA: Status
-                    {
-                        If (_OSI ("Darwin"))
-                        {
-                            Return (0x0F)
-                        }
-                        Else
-                        {
-                            Return (Zero)
-                        }
-                    }
-                }
-            }
-
             Scope (LPCB)
             {
                 Device (PMCR)
@@ -202,32 +172,6 @@ DefinitionBlock ("", "SSDT", 2, "HACK", "ASROCK", 0x00000000)
                 }
             }
         }
-    }
-
-    Method (GPRW, 2, NotSerialized)
-    {
-        If (_OSI ("Darwin"))
-        {
-            If ((0x6D == Arg0))
-            {
-                Return (Package (0x02)
-                {
-                    0x6D, 
-                    Zero
-                })
-            }
-
-            If ((0x0D == Arg0))
-            {
-                Return (Package (0x02)
-                {
-                    0x0D, 
-                    Zero
-                })
-            }
-        }
-
-        Return (XPRW (Arg0, Arg1))
     }
 }
 
