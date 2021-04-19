@@ -87,10 +87,16 @@
 		<dict>
 			<key>PciRoot(0x0)/Pci(0x1C,0x0)/Pci(0x0,0x0)</key>
 			<dict>
-				<key>pci-aspm-default</key>
+				<key>#pci-aspm-default</key>
 				<integer>0</integer>
+				<key>IOName</key>
+				<string>pci14e4,43a0</string>
 				<key>brcmfx-country</key>
 				<string>#a</string>
+				<key>compatible</key>
+				<string>pci14e4,43a0</string>
+				<key>device-id</key>
+				<data>oEMAAA==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
 			<dict>
