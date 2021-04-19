@@ -50,6 +50,7 @@ EFI for ASROCK Z490M ITX/AC with OpenCore bootloader
 ![videoproc](./Screenshot/VIDEOPROC.jpg)
 ![WIFI-TEST](./Screenshot/WIFI-SPEED.png)
 ![Fan&Temp](./Screenshot/SENSOR.png)
+![Fan&Temp2](./Screenshot/SENSOR2.png)
 
 
 ## USB Port Map & Lan Realtek 2.5g Setting
