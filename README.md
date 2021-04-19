@@ -81,7 +81,7 @@ EFI for ASROCK Z490M ITX/AC with OpenCore bootloader
 - [x] 1° CONTROLLER NVME PciE Gen3x4
 - [x] 2° CONTROLLER NVME PciE Gen3x4
 - [x] CONTROLLER SATA III
-- [x] All Sensors (CPU, GPU, NVME, SATA, FAN)
+- [x] All Sensors (CPU, GPU, NVME, SATA, FANS)
 - [x] Realtek RTL8125 LAN
 - [x] Intel I219 V11 LAN
 - [x] NVRAM
