@@ -49,6 +49,7 @@ EFI for ASROCK Z490M ITX/AC with OpenCore bootloader
 ![IGPU-METAL](./Screenshot/IGPU-METAL.jpg)
 ![videoproc](./Screenshot/VIDEOPROC.jpg)
 ![WIFI-TEST](./Screenshot/WIFI-SPEED.png)
+![AIRDROP](./Screenshot/AIRDROP.png)
 ![Fan&Temp](./Screenshot/SENSOR.png)
 ![Fan&Temp2](./Screenshot/SENSOR2.png)
 
