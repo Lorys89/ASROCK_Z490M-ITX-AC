@@ -85,19 +85,6 @@
 	<dict>
 		<key>Add</key>
 		<dict>
-			<key>PciRoot(0x0)/Pci(0x1C,0x0)/Pci(0x0,0x0)</key>
-			<dict>
-				<key>IOName</key>
-				<string>pci14e4,43ba</string>
-				<key>brcmfx-country</key>
-				<string>#a</string>
-				<key>compatible</key>
-				<string>pci14e4,43ba</string>
-				<key>device-id</key>
-				<data>ukMAAA==</data>
-				<key>pci-aspm-default</key>
-				<integer>0</integer>
-			</dict>
 			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
 			<dict>
 				<key>device-id</key>
@@ -106,6 +93,13 @@
 				<string>onboard-1</string>
 				<key>layout-id</key>
 				<integer>69</integer>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1C,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>brcmfx-alldrv</key>
+				<data>AQAAAA==</data>
+				<key>brcmfx-country</key>
+				<string>#a</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
@@ -126,11 +120,11 @@
 				<key>framebuffer-con1-type</key>
 				<data>AAgAAA==</data>
 				<key>framebuffer-con2-busid</key>
-				<data>CAAAAA==</data>
+				<data>BAAAAA==</data>
 				<key>framebuffer-con2-enable</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-con2-type</key>
-				<data>AAQAAA==</data>
+				<data>AAgAAA==</data>
 				<key>framebuffer-patch-enable</key>
 				<data>AQAAAA==</data>
 				<key>hda-gfx</key>
