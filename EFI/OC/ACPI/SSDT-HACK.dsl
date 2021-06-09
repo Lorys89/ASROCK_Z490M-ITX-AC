@@ -5,23 +5,24 @@
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of iASLVhz3qm.aml, Tue Apr  6 18:15:27 2021
+ * Disassembly of iASLqmvoqq.aml, Wed Jun  9 22:55:37 2021
  *
  * Original Table Header:
  *     Signature        "SSDT"
- *     Length           0x0000027A (634)
+ *     Length           0x00000307 (775)
  *     Revision         0x02
- *     Checksum         0x7F
- *     OEM ID           "HACK"
+ *     Checksum         0xA7
+ *     OEM ID           "DELL"
  *     OEM Table ID     "ASROCK"
  *     OEM Revision     0x00000000 (0)
  *     Compiler ID      "INTL"
- *     Compiler Version 0x20200925 (538970405)
+ *     Compiler Version 0x20180427 (538444839)
  */
-DefinitionBlock ("", "SSDT", 2, "HACK", "ASROCK", 0x00000000)
+DefinitionBlock ("", "SSDT", 2, "DELL", "ASROCK", 0x00000000)
 {
     External (_SB_.PCI0, DeviceObj)
     External (_SB_.PCI0.LPCB, DeviceObj)
+    External (_SB_.PCI0.SBUS, DeviceObj)
     External (_SB_.PCI0.XHC_._PRW, MethodObj)    // 0 Arguments
     External (_SB_.PR00, ProcessorObj)
     External (STAS, IntObj)
@@ -125,6 +126,48 @@ DefinitionBlock ("", "SSDT", 2, "HACK", "ASROCK", 0x00000000)
                     Else
                     {
                         Return (Zero)
+                    }
+                }
+            }
+
+            Scope (SBUS)
+            {
+                Device (BUS0)
+                {
+                    Name (_CID, "smbus")  // _CID: Compatible ID
+                    Name (_ADR, Zero)  // _ADR: Address
+                    Device (DVL0)
+                    {
+                        Name (_ADR, 0x57)  // _ADR: Address
+                        Name (_CID, "diagsvault")  // _CID: Compatible ID
+                        Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
+                        {
+                            If (!Arg2)
+                            {
+                                Return (Buffer (One)
+                                {
+                                     0x57                                             // W
+                                })
+                            }
+
+                            Return (Package (0x02)
+                            {
+                                "address", 
+                                0x57
+                            })
+                        }
+                    }
+
+                    Method (_STA, 0, NotSerialized)  // _STA: Status
+                    {
+                        If (_OSI ("Darwin"))
+                        {
+                            Return (0x0F)
+                        }
+                        Else
+                        {
+                            Return (Zero)
+                        }
                     }
                 }
             }
