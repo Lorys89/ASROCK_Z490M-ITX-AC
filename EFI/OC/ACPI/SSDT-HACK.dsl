@@ -5,7 +5,7 @@
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of iASL8s4q7B.aml, Thu Jun 10 13:11:30 2021
+ * Disassembly of iASLPZTwo6.aml, Thu Jun 10 13:23:40 2021
  *
  * Original Table Header:
  *     Signature        "SSDT"
@@ -33,7 +33,7 @@ DefinitionBlock ("", "SSDT", 2, "DELL", "ASROCK", 0x00000000)
         {
             If (_OSI ("Darwin"))
             {
-                STAS = 0x02
+                STAS = 1
             }
         }
 
@@ -198,30 +198,7 @@ DefinitionBlock ("", "SSDT", 2, "DELL", "ASROCK", 0x00000000)
                     })
                 }
 
-                Device (ARTC)
-                {
-                    Name (_HID, EisaId ("PNP0B00") /* AT Real-Time Clock */)  // _HID: Hardware ID
-                    Name (_CRS, ResourceTemplate ()  // _CRS: Current Resource Settings
-                    {
-                        IO (Decode16,
-                            0x0070,             // Range Minimum
-                            0x0070,             // Range Maximum
-                            0x01,               // Alignment
-                            0x02,               // Length
-                            )
-                    })
-                    Method (_STA, 0, NotSerialized)  // _STA: Status
-                    {
-                        If (_OSI ("Darwin"))
-                        {
-                            Return (0x0F)
-                        }
-                        Else
-                        {
-                            Return (Zero)
-                        }
-                    }
-                }
+                
 
                 Device (EC)
                 {
