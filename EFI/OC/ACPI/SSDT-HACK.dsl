@@ -5,18 +5,18 @@
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of iASLqmvoqq.aml, Wed Jun  9 22:55:37 2021
+ * Disassembly of iASL8s4q7B.aml, Thu Jun 10 13:11:30 2021
  *
  * Original Table Header:
  *     Signature        "SSDT"
- *     Length           0x00000307 (775)
+ *     Length           0x00000348 (840)
  *     Revision         0x02
- *     Checksum         0xA7
+ *     Checksum         0x8C
  *     OEM ID           "DELL"
  *     OEM Table ID     "ASROCK"
  *     OEM Revision     0x00000000 (0)
  *     Compiler ID      "INTL"
- *     Compiler Version 0x20180427 (538444839)
+ *     Compiler Version 0x20200925 (538970405)
  */
 DefinitionBlock ("", "SSDT", 2, "DELL", "ASROCK", 0x00000000)
 {
@@ -33,7 +33,7 @@ DefinitionBlock ("", "SSDT", 2, "DELL", "ASROCK", 0x00000000)
         {
             If (_OSI ("Darwin"))
             {
-                STAS = One
+                STAS = 0x02
             }
         }
 
@@ -196,6 +196,31 @@ DefinitionBlock ("", "SSDT", 2, "DELL", "ASROCK", 0x00000000)
                             0x00010000,         // Address Length
                             )
                     })
+                }
+
+                Device (ARTC)
+                {
+                    Name (_HID, EisaId ("PNP0B00") /* AT Real-Time Clock */)  // _HID: Hardware ID
+                    Name (_CRS, ResourceTemplate ()  // _CRS: Current Resource Settings
+                    {
+                        IO (Decode16,
+                            0x0070,             // Range Minimum
+                            0x0070,             // Range Maximum
+                            0x01,               // Alignment
+                            0x02,               // Length
+                            )
+                    })
+                    Method (_STA, 0, NotSerialized)  // _STA: Status
+                    {
+                        If (_OSI ("Darwin"))
+                        {
+                            Return (0x0F)
+                        }
+                        Else
+                        {
+                            Return (Zero)
+                        }
+                    }
                 }
 
                 Device (EC)
