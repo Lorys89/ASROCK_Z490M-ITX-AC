@@ -5,13 +5,13 @@
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of iASLPZTwo6.aml, Thu Jun 10 13:23:40 2021
+ * Disassembly of iASLbr9rrZ.aml, Sat Jul 24 11:40:59 2021
  *
  * Original Table Header:
  *     Signature        "SSDT"
- *     Length           0x00000348 (840)
+ *     Length           0x00000315 (789)
  *     Revision         0x02
- *     Checksum         0x8C
+ *     Checksum         0x3F
  *     OEM ID           "DELL"
  *     OEM Table ID     "ASROCK"
  *     OEM Revision     0x00000000 (0)
@@ -25,6 +25,7 @@ DefinitionBlock ("", "SSDT", 2, "DELL", "ASROCK", 0x00000000)
     External (_SB_.PCI0.SBUS, DeviceObj)
     External (_SB_.PCI0.XHC_._PRW, MethodObj)    // 0 Arguments
     External (_SB_.PR00, ProcessorObj)
+    External (HPTE, IntObj)
     External (STAS, IntObj)
 
     Scope (\_SB)
@@ -33,7 +34,8 @@ DefinitionBlock ("", "SSDT", 2, "DELL", "ASROCK", 0x00000000)
         {
             If (_OSI ("Darwin"))
             {
-                STAS = 1
+                STAS = One
+                HPTE = Zero
             }
         }
 
@@ -197,8 +199,6 @@ DefinitionBlock ("", "SSDT", 2, "DELL", "ASROCK", 0x00000000)
                             )
                     })
                 }
-
-                
 
                 Device (EC)
                 {

@@ -31,6 +31,8 @@
 			<false/>
 			<key>ResetLogoStatus</key>
 			<false/>
+			<key>SyncTableIds</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>Booter</key>
@@ -85,21 +87,29 @@
 	<dict>
 		<key>Add</key>
 		<dict>
+			<key>PciRoot(0x0)/Pci(0x1C,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>#IOName</key>
+				<string>pci14e4,43ba</string>
+				<key>#brcmfx-alldrv</key>
+				<data>AQAAAA==</data>
+				<key>#compatible</key>
+				<string>pci14e4,43ba</string>
+				<key>#device-id</key>
+				<data>ukMAAA==</data>
+				<key>#pci-aspm-default</key>
+				<integer>0</integer>
+				<key>brcmfx-country</key>
+				<string>#a</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
 			<dict>
-				<key>device-id</key>
+				<key>#device-id</key>
 				<data>cJ0AAA==</data>
 				<key>hda-gfx</key>
 				<string>onboard-1</string>
 				<key>layout-id</key>
 				<integer>69</integer>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1C,0x0)/Pci(0x0,0x0)</key>
-			<dict>
-				<key>brcmfx-alldrv</key>
-				<data>AQAAAA==</data>
-				<key>brcmfx-country</key>
-				<string>#a</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
@@ -124,15 +134,67 @@
 				<key>framebuffer-con2-enable</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-con2-type</key>
-				<data>AAgAAA==</data>
+				<data>AAQAAA==</data>
 				<key>framebuffer-patch-enable</key>
 				<data>AQAAAA==</data>
-				<key>hda-gfx</key>
-				<string>onboard-1</string>
 				<key>igfxfw</key>
 				<data>AgAAAA==</data>
 				<key>model</key>
 				<string>Intel UHD Graphics</string>
+			</dict>
+			<key>#PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<dict>
+				<key>AAPL,ig-platform-id</key>
+				<data>AwDFmw==</data>
+				<key>model</key>
+				<string>Intel UHD Graphics</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x17,0x0)</key>
+			<dict>
+				<key>#IOName</key>
+				<string>pci8086,a182</string>
+				<key>compatible</key>
+				<string>pci8086,a182</string>
+				<key>device-id</key>
+				<data>gqEAAA==</data>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1D,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>#IOName</key>
+				<string>pci144d,a806</string>
+				<key>#name</key>
+				<string>pci144d,a806</string>
+				<key>#revision-id</key>
+				<data>AAAAAA==</data>
+				<key>#subsystem-id</key>
+				<data>AagAAA==</data>
+				<key>#subsystem-vendor-id</key>
+				<data>TRQAAA==</data>
+				<key>#vendor-id</key>
+				<data>TRQAAA==</data>
+				<key>compatible</key>
+				<string>pci144d,a806</string>
+				<key>device-id</key>
+				<data>BqgAAA==</data>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1B,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>#IOName</key>
+				<string>pci144d,a806</string>
+				<key>#name</key>
+				<string>pci144d,a806</string>
+				<key>#revision-id</key>
+				<data>AAAAAA==</data>
+				<key>#subsystem-id</key>
+				<data>AagAAA==</data>
+				<key>#subsystem-vendor-id</key>
+				<data>TRQAAA==</data>
+				<key>#vendor-id</key>
+				<data>TRQAAA==</data>
+				<key>compatible</key>
+				<string>pci144d,a806</string>
+				<key>device-id</key>
+				<data>BqgAAA==</data>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -254,6 +316,24 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
+				<string>BlueToolFixup.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/BlueToolFixup</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string>21.0.0</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
 				<string>BrcmBluetoothInjector.kext</string>
 				<key>Comment</key>
 				<string></string>
@@ -280,7 +360,7 @@
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/BrcmFirmwareData</string>
 				<key>MaxKernel</key>
-				<string>20.9.9</string>
+				<string></string>
 				<key>MinKernel</key>
 				<string></string>
 				<key>PlistPath</key>
@@ -298,7 +378,7 @@
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/BrcmPatchRAM3</string>
 				<key>MaxKernel</key>
-				<string>20.9.9</string>
+				<string></string>
 				<key>MinKernel</key>
 				<string></string>
 				<key>PlistPath</key>
@@ -384,7 +464,7 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/FakePCIID</string>
 				<key>MaxKernel</key>
@@ -402,7 +482,7 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string></string>
 				<key>MaxKernel</key>
@@ -567,6 +647,8 @@
 		</dict>
 		<key>Scheme</key>
 		<dict>
+			<key>CustomKernel</key>
+			<false/>
 			<key>FuzzyMatch</key>
 			<true/>
 			<key>KernelArch</key>
@@ -598,7 +680,7 @@
 			<key>PickerMode</key>
 			<string>External</string>
 			<key>PickerVariant</key>
-			<string>Acidanthera\GoldenGate</string>
+			<string>Default</string>
 			<key>PollAppleHotKeys</key>
 			<true/>
 			<key>ShowPicker</key>
@@ -693,6 +775,8 @@
 				<data>ZW4tVVM6MA==</data>
 				<key>run-efi-updater</key>
 				<string>No</string>
+				<key>ForceDisplayRotationInEFI</key>
+				<integer>0</integer>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -759,11 +843,11 @@
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02026200CDPHCD1F</string>
+			<string>C02028609QXPHCDCB</string>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
-			<data>8ae5ZF0W</data>
+			<data>iopM0A4A</data>
 			<key>SpoofVendor</key>
 			<false/>
 			<key>SystemMemoryStatus</key>
@@ -771,9 +855,9 @@
 			<key>SystemProductName</key>
 			<string>iMac20,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C02CXDZ0PN5T</string>
+			<string>C02D20CKPN5T</string>
 			<key>SystemUUID</key>
-			<string>4186613B-FE85-4FFE-83EF-C9E1DD37A4CA</string>
+			<string>AF56422B-BF4E-427E-B81E-697A8FBBD8CE</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
