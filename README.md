@@ -31,7 +31,7 @@ EFI for ASROCK Z490M ITX/AC with OpenCore bootloader
 | SmBios           | iMac 20,1                          |
 | BootLoader       | OpenCore 0.7.0                     |
 | macOS            | Big Sur 11.5.                      |
-| macOS            | Monterey 12.0 (Beta 2)             |
+| macOS            | Monterey 12.0 (Beta 4)             |
 
 
 ![infomacmonterey](./Screenshot/infomonterey-gpu.png)
