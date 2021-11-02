@@ -5,13 +5,13 @@
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of iASLbr9rrZ.aml, Sat Jul 24 11:40:59 2021
+ * Disassembly of iASL8s4q7B.aml, Thu Jun 10 13:11:30 2021
  *
  * Original Table Header:
  *     Signature        "SSDT"
- *     Length           0x00000315 (789)
+ *     Length           0x00000348 (840)
  *     Revision         0x02
- *     Checksum         0x3F
+ *     Checksum         0x8C
  *     OEM ID           "DELL"
  *     OEM Table ID     "ASROCK"
  *     OEM Revision     0x00000000 (0)
@@ -25,7 +25,6 @@ DefinitionBlock ("", "SSDT", 2, "DELL", "ASROCK", 0x00000000)
     External (_SB_.PCI0.SBUS, DeviceObj)
     External (_SB_.PCI0.XHC_._PRW, MethodObj)    // 0 Arguments
     External (_SB_.PR00, ProcessorObj)
-    External (HPTE, IntObj)
     External (STAS, IntObj)
 
     Scope (\_SB)
@@ -34,8 +33,7 @@ DefinitionBlock ("", "SSDT", 2, "DELL", "ASROCK", 0x00000000)
         {
             If (_OSI ("Darwin"))
             {
-                STAS = One
-                HPTE = Zero
+                STAS = 0x02
             }
         }
 
@@ -198,6 +196,31 @@ DefinitionBlock ("", "SSDT", 2, "DELL", "ASROCK", 0x00000000)
                             0x00010000,         // Address Length
                             )
                     })
+                }
+
+                Device (ARTC)
+                {
+                    Name (_HID, EisaId ("PNP0B00") /* AT Real-Time Clock */)  // _HID: Hardware ID
+                    Name (_CRS, ResourceTemplate ()  // _CRS: Current Resource Settings
+                    {
+                        IO (Decode16,
+                            0x0070,             // Range Minimum
+                            0x0070,             // Range Maximum
+                            0x01,               // Alignment
+                            0x02,               // Length
+                            )
+                    })
+                    Method (_STA, 0, NotSerialized)  // _STA: Status
+                    {
+                        If (_OSI ("Darwin"))
+                        {
+                            Return (0x0F)
+                        }
+                        Else
+                        {
+                            Return (Zero)
+                        }
+                    }
                 }
 
                 Device (EC)
