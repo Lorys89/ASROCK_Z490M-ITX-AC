@@ -29,13 +29,10 @@ EFI for ASROCK Z490M ITX/AC with OpenCore bootloader
 | 1° SATA SSD      | SAMSUNG 860 EVO 500 GB (BACKUP)    |
 | 2° SATA SSD      | SAMSUNG 870 EVO 500 GB (DATI)      |
 | SmBios           | iMac 20,1                          |
-| BootLoader       | OpenCore 0.7.0                     |
-| macOS            | Big Sur 11.5.                      |
-| macOS            | Monterey 12.0 (Beta 4)             |
+| BootLoader       | OpenCore 0.7.5                     |
+| macOS            | Monterey 12.0.1                    |
 
 
-![infomacmonterey](./Screenshot/infomonterey-gpu.png)
-![infomacmonterey2](./Screenshot/infomonterey-igpu.png)
 ![infomac](./Screenshot/GPU-INFOMAC.png)
 ![infomac2](./Screenshot/IGPU-INFOMAC.png)
 
@@ -87,7 +84,7 @@ EFI for ASROCK Z490M ITX/AC with OpenCore bootloader
 - [x] Realtek RTL8125 LAN
 - [x] Intel I219 V11 LAN
 - [x] NVRAM
-- [x] Windows 10 boot from OpenCore
+- [x] Windows 11 boot from OpenCore
 
 
 See [ioreg](./iMac_20,1.ioreg) for more clarification
