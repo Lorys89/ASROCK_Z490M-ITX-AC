@@ -1,5 +1,4 @@
 [![](https://img.shields.io/badge/EFI-Release-informational?style=flat&logo=apple&logoColor=white&color=9debeb)](https://github.com/Lorys89/ASROCK_Z490M-ITX-AC/releases)
-[![](https://img.shields.io/badge/Telegram-HackintoshLifeIT-informational?style=flat&logo=telegram&logoColor=white&color=5fb659)](https://t.me/HackintoshLife_it)
 
 # ASROCK Z490M ITX/AC Hackintosh
 
@@ -25,8 +24,8 @@ EFI for ASROCK Z490M ITX/AC with OpenCore bootloader
 | 1° SATA SSD      | SAMSUNG 860 EVO 500 GB (BACKUP)    |
 | 2° SATA SSD      | SAMSUNG 870 EVO 500 GB (DATI)      |
 | SmBios           | iMac 20,1                          |
-| BootLoader       | OpenCore 0.7.5                     |
-| macOS            | Monterey 12.0.1                    |
+| BootLoader       | OpenCore 0.8.3                     |
+| macOS            | Ventura 13 Beta 6                  |
 
 
 ![infomac](./Screenshot/GPU-INFOMAC.png)
@@ -74,12 +73,14 @@ EFI for ASROCK Z490M ITX/AC with OpenCore bootloader
 - [x] Wi-Fi and Bluetooth DW1820A (BCM94350ZAE) Module
 - [x] 1° CONTROLLER NVME PciE Gen3x4
 - [x] 2° CONTROLLER NVME PciE Gen3x4
-- [x] CONTROLLER SATA III
+- [x] CONTROLLER SATA AHCI
 - [x] All Sensors (CPU, GPU, NVME, SATA, FANS)
 - [x] Realtek RTL8125 LAN
 - [x] Intel I219 V11 LAN
 - [x] NVRAM
 - [x] Windows 11 boot from OpenCore
+- [x] Linux boot from OpenCore
+
 
 
 See [ioreg](./iMac_20,1.ioreg) for more clarification
@@ -110,5 +111,3 @@ See [ioreg](./iMac_20,1.ioreg) for more clarification
 
 - [Apple](https://apple.com) for macOS;
 - [Acidanthera](https://github.com/acidanthera) for OpenCore and all the lovely hackintosh work.
-- [Dortania](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/icelake.html) For great and detailed guides.
-- [Hackintoshlifeit](https://github.com/Hackintoshlifeit) Support group for installation and post installation.
