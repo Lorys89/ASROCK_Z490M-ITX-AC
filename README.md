@@ -13,7 +13,7 @@ EFI for ASROCK Z490M ITX/AC with OpenCore bootloader
 | ---------------- | ---------------------------------- |
 | CPU              | Intel i5 10600K (6C-12T 12MB CML)  |
 | iGPU             | Intel® UHD Graphics                |
-| GPU              | SAPPHIRE PULSE RX5600 6GB GDDR6    |
+| GPU              | SAPPHIRE PULSE RX5600XT 6GB GDDR6  |
 | Lan 2.5 GBPS     | Realtek 8125                       |
 | Lan 1.0 GBPS     | Intel I219 V11                     |
 | Audio            | Realtek ALC1200                    |
@@ -60,8 +60,8 @@ EFI for ASROCK Z490M ITX/AC with OpenCore bootloader
 
 - [x] Intel UHD iGPU HDMI/DP Output
 - [x] Intel UHD iGPU - H264 & HEVC
-- [x] SAPPHIRE PULSE RX5600 HDMI/DP OUTPUT (with audio) 
-- [x] SAPPHIRE PULSE RX5600 - H264 & HEVC
+- [x] SAPPHIRE PULSE RX5600XT HDMI/DP OUTPUT (with audio) 
+- [x] SAPPHIRE PULSE RX5600XT - H264 & HEVC
 - [x] ALC1200 jack headphone (Front) 
 - [x] ALC1200 jack line-out (Rear) 
 - [x] ALC1200 jack microphone (Front & Rear)
